@@ -9,8 +9,9 @@ function openClick() {
     callPostMessageB(url);
   } else if (navigator.userAgent.match(/Android/i)) {
     callPostMessageA(url);
+  } else {
+    window.location.replace(url);
   }
-  window.location.replace(url);
 }
 
 function callPostMessageA(msn) {
