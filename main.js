@@ -6,9 +6,17 @@ function openClick() {
     navigator.userAgent.match(/iPad/i) ||
     navigator.userAgent.match(/iPod/i)
   ) {
-    url = "https://apps.apple.com/co/app/safari/id1146562112"
+    callPostMessageB(url);
   } else if (navigator.userAgent.match(/Android/i)) {
-    url = "https://play.google.com/store/apps/details?id=com.android.chrome&hl=es_CO&gl=US"
+    callPostMessageA(url);
   }
   window.location.replace(url);
+}
+
+function callPostMessageA(msn) {
+    window.toggleMessageHandler.postMessage("test android " + msn)
+}
+
+function callPostMessageB(msn) {
+    window.webkit.messageHandlers.toggleMessageHandler.postMessage("test iphone " + msn)
 }
