@@ -14,9 +14,17 @@ function openClick() {
 }
 
 function callPostMessageA(msn) {
-    window.toggleMessageHandler.postMessage("test android " + msn)
+    window.toggleMessageHandler.postMessage(JSON.stringify({
+      type:'REDIRECT',
+      device: 'android',
+      url: msn
+    }))
 }
 
 function callPostMessageB(msn) {
-    window.webkit.messageHandlers.toggleMessageHandler.postMessage("test iphone " + msn)
+    window.webkit.messageHandlers.toggleMessageHandler.postMessage(JSON.stringify({
+      type:'REDIRECT',
+      device: 'ios',
+      url: msn
+    }))
 }
