@@ -1,4 +1,4 @@
-import TextLoop from "react-text-loop";
+import { TextLoop } from "../../components";
 
 const conctInfo = {
   phone: "+57 3132196834",
@@ -51,9 +51,9 @@ export const Slider = () => {
                   data-aos-delay="200"
                 >
                   <TextLoop>
-                    <p className="loop-text lead"> Software Engineer</p>
-                    <p className="loop-text lead"> Frontend Developer</p>
-                    <p className="loop-text lead"> Full-stack Developer</p>
+                    <p className="animate__animated animate__flipInX loop-text lead"> Software Engineer</p>
+                    <p className="animate__animated animate__flipInX loop-text lead"> Frontend Developer</p>
+                    <p className="animate__animated animate__flipInX loop-text lead"> Full-stack Developer</p>
                   </TextLoop>
                 </div>
 
