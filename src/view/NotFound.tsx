@@ -3,7 +3,7 @@ import { useDocumentTitle } from "../hooks";
 import { Footer } from "../page";
 
 export const NotFound = () => {
-  useDocumentTitle("Not Found || React Personal Portfolio Template");
+  useDocumentTitle("Not Found");
   return (
     <>
       <section className="error-page-wrapper">
