@@ -1,33 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from 'react'
+import AOS from "aos";
+import AnimatedCursor from 'react-animated-cursor';
+import { ScrollToTop } from './components';
+import { PortafolioRouter } from './router/PortafolioRouter';
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={44}
+        color="0, 72, 186"
+        outerAlpha={0.3}
+        innerScale={0.7}
+        outerScale={1.4}
+      />
+      <ScrollToTop />
+      <PortafolioRouter />
     </>
   )
 }
