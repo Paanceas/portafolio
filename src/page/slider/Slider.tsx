@@ -32,7 +32,7 @@ export const Slider = () => {
 
         <div className="container">
           <div className="row full-screen align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div className="type-box">
                 <h6 data-aos="fade-up" data-aos-duration="1200">
                   Hola, Mi nombre es
@@ -51,9 +51,9 @@ export const Slider = () => {
                   data-aos-delay="200"
                 >
                   <TextLoop>
-                    <p className="animate__animated animate__flipInX loop-text lead"> Software Engineer</p>
-                    <p className="animate__animated animate__flipInX loop-text lead"> Frontend Developer</p>
-                    <p className="animate__animated animate__flipInX loop-text lead"> Full-stack Developer</p>
+                    <p className="loop-text lead"> Software Engineer</p>
+                    <p className="loop-text lead"> Frontend Developer</p>
+                    <p className="loop-text lead"> Full-stack Developer</p>
                   </TextLoop>
                 </div>
 

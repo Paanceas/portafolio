@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import {
@@ -8,6 +8,7 @@ import {
   FiPhoneOutgoing,
 } from "react-icons/fi";
 import { FaHome, FaBlog } from "react-icons/fa";
+import { ScrollSpy } from "../../components";
 
 export const Header = () => {
   const [click, setClick] = useState(false);
@@ -60,8 +61,13 @@ export const Header = () => {
           </div>
           {/* End htl-top */}
 
-            <ul className="nav nav-menu">
-                <li className="active">
+          <ScrollSpy
+        className="nav nav-menu"
+        items={["home", "about", "resume", "work", "blog", "contactus"]}
+        currentClassName="active"
+        offset={0}
+      >
+                <li>
                 <a
                     className="nav-link active"
                     href="#home"
@@ -175,7 +181,7 @@ export const Header = () => {
                     </ReactTooltip>
                 </a>
                 </li>
-            </ul>
+                </ScrollSpy>
         </div>
       </header>
       {/* End Header */}

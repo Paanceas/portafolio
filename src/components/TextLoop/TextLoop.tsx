@@ -24,7 +24,7 @@ export const TextLoop: React.FC<TextLoopProps> = ({ children, interval = 3000, a
   return (
     <span style={animationStyle} onAnimationEnd={() => setAnimationStyle({})}>
       {cloneElement(currentChild, {
-        className: `${currentChild.props.className || ""} active`,
+        className: `${currentChild.props.className || ""} active animate__animated animate__fadeInUp`,
       })}
     </span>
   );
