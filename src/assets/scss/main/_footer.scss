@@ -14,7 +14,7 @@
         color: $px-dark;
       }
       &:hover {
-        color: $px-theme;
+        color: var(--main-color);
       }
     }
   }

@@ -29,10 +29,10 @@ img {
 }
 
 a {
-  color: $px-theme;
+  color: var(--main-color);
   transition: 0.3s;
   @include px-hover {
-    color: darken($px-theme, 8%);
+    color: #{rgba(var(--main-color), 0.7)};
     text-decoration: none;
   }
 }
@@ -45,7 +45,7 @@ h6 {
   color: #0b0b13;
 }
 mark {
-  background-image: linear-gradient($px-theme, $px-theme);
+  background-image: linear-gradient(var(--main-color), var(--main-color));
   background-size: 100% 3px;
   background-repeat: no-repeat;
   background-position: 0 bottom;
@@ -115,7 +115,7 @@ a {
   right: 17px;
   bottom: 20px;
   background-color: #fff;
-  color: $px-theme;
+  color: var(--main-color);
   width: 45px;
   height: 45px;
   z-index: 99;
@@ -168,7 +168,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: $px-theme;
+  background: var(--main-color);
   z-index: 99999;
 }
 .load-circle {

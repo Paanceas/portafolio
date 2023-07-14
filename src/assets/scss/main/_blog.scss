@@ -81,8 +81,8 @@
         font-weight: 500;
       }
       &:hover {
-        background: $px-theme;
-        border-color: $px-theme;
+        background: var(--main-color);
+        border-color: var(--main-color);
         color: $px-white;
       }
     }
@@ -93,8 +93,8 @@
     }
     &.active {
       .page-link {
-        background: $px-theme;
-        border-color: $px-theme;
+        background: var(--main-color);
+        border-color: var(--main-color);
         color: $px-white;
       }
     }
@@ -116,7 +116,7 @@
       background: $px-gray;
     }
     &:hover {
-      background: $px-theme;
+      background: var(--main-color);
       color: $px-white;
     }
   }
@@ -152,8 +152,8 @@
       margin-bottom: 20px;
       a {
         text-transform: uppercase;
-        color: $px-theme;
-        border-bottom: 1px solid $px-theme;
+        color: var(--main-color);
+        border-bottom: 1px solid var(--main-color);
       }
     }
     h2 {
@@ -183,7 +183,7 @@
         padding-left: 8px;
         label {
           font-weight: 600;
-          color: $px-theme;
+          color: var(--main-color);
           margin: 0;
         }
         span {
@@ -215,7 +215,7 @@
       p {
         font-size: 20px;
         font-weight: 500;
-        color: $px-theme;
+        color: var(--main-color);
         margin: 0;
       }
       .blockquote-footer {

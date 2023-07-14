@@ -118,7 +118,7 @@
         bottom: 0;
         margin: auto;
         height: 2px;
-        background: $px-theme;
+        background: var(--main-color);
         position: absolute;
         @include transition(ease all 0.55s);
       }
@@ -291,7 +291,7 @@
         bottom: 0;
         margin: auto;
         height: 2px;
-        background: $px-theme;
+        background: var(--main-color);
         position: absolute;
         @include transition(ease all 0.55s);
       }

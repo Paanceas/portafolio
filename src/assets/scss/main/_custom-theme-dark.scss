@@ -63,7 +63,7 @@
         color: rgba(255, 255, 255, 0.8);
       }
       .lead {
-        color: $px-theme;
+        color: var(--main-color);
       }
       h6 {
         color: #c8c8cb;

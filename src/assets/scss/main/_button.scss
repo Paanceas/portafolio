@@ -13,19 +13,19 @@
   letter-spacing: 0.3px;
   cursor: pointer !important;
   &.btn-outline {
-    border: 1px solid $px-theme;
+    border: 1px solid var(--main-color);
     &:hover {
-      background: $px-theme;
+      background: var(--main-color);
       color: #fff;
     }
   }
   &.px-btn-theme {
-    background: $px-theme;
-    border: 1px solid $px-theme;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
     color: #fff;
     &:hover {
       background: $px-white;
-      color: $px-theme;
+      color: var(--main-color);
     }
   }
   &.px-btn-white {

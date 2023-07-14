@@ -42,7 +42,7 @@
       width: 45px;
       height: 45px;
       border-radius: 50%;
-      background: $px-theme;
+      background: var(--main-color);
       position: absolute;
       top: -8px;
       left: -15px;
@@ -51,7 +51,7 @@
       animation: slide-both-side 4s infinite both;
 
       .theme-light & {
-        background: rgba($px-theme, 0.5);
+        background: rgba(var(--main-color), 0.5);
       }
       @include down-md {
         top: -4px;
@@ -130,7 +130,7 @@
       a {
         transition: 0.3s;
         &:hover {
-          color: $px-theme;
+          color: var(--main-color);
         }
       }
     }
@@ -151,7 +151,7 @@
         }
         &:hover,
         &.active {
-          background: $px-theme;
+          background: var(--main-color);
           a {
             .theme-light & {
               color: $px-white;
@@ -229,7 +229,7 @@
       text-transform: capitalize;
       margin-bottom: 15px;
       .theme-light & {
-        color: $px-theme;
+        color: var(--main-color);
         line-height: 1.2;
       }
       @include down-sm {
@@ -330,7 +330,7 @@
     overflow: hidden;
     border: 5px solid $px-white;
     .theme-light & {
-      border: 5px solid $px-theme;
+      border: 5px solid var(--main-color);
     }
   }
   .img {
@@ -392,7 +392,7 @@
       }
       &:hover {
         @include scale(1.1);
-        background: $px-theme;
+        background: var(--main-color);
         color: $px-white;
       }
     }
@@ -458,7 +458,7 @@
     height: 200px;
     border-radius: 50%;
     z-index: -2;
-    background: $px-theme;
+    background: var(--main-color);
     transition: 0.5s ease-in-out;
   }
   .icon {
@@ -633,7 +633,7 @@
       padding: 5px 10px;
       border-radius: 3px;
       color: $px-white;
-      background: $px-theme;
+      background: var(--main-color);
       font-size: 12px;
       font-weight: 500;
     }
@@ -684,7 +684,7 @@
       position: relative;
       @include transition(ease all 0.55s);
       height: 10px;
-      background: $px-theme;
+      background: var(--main-color);
     }
   }
 }
@@ -751,7 +751,7 @@
     i {
       width: 30px;
       text-align: center;
-      color: $px-theme;
+      color: var(--main-color);
       font-size: 22px;
       font-weight: 600;
     }
