@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import AOS from "aos";
 import AnimatedCursor from 'react-animated-cursor';
 import { ScrollToTop } from './components';
 import { PortafolioRouter } from './router/PortafolioRouter';
 
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function hexToRgb() {
   const hex = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
