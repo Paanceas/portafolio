@@ -105,7 +105,7 @@ export const Header = () => {
                     </ReactTooltip>
                 </a>
                 </li>
-                <li>
+                {/* <li>
                 <a
                     className="nav-link"
                     href="#resume"
@@ -180,7 +180,7 @@ export const Header = () => {
                     <span>Contact</span>
                     </ReactTooltip>
                 </a>
-                </li>
+                </li> */}
                 </ScrollSpy>
         </div>
       </header>
