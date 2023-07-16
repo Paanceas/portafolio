@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
 import {
   FiUser,
-  FiBriefcase,
-  FiFileText,
-  FiPhoneOutgoing,
 } from "react-icons/fi";
-import { FaHome, FaBlog } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { ScrollSpy } from "../../components";
 
 export const Header = () => {

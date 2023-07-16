@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     AOS.init();
-    const mainColorHex = "#f29a86";
+    // const mainColorHex = "#f29a86";
     // document.documentElement.style.setProperty('--main-color', mainColorHex);
     const mainColorRgb = hexToRgb();
     setBackgroundColor(mainColorRgb);

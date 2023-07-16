@@ -1,4 +1,4 @@
-import { Awards, Services, Social, Testimonials } from ".";
+import { Social } from ".";
 
 
 const conctInfo = {
