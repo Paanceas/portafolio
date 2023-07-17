@@ -2,8 +2,8 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dotenv from 'dotenv';
 
-export default defineConfig(({ mode }) => {
-  const envResult = dotenv.config({ path: `.env.${mode}` });
+export default defineConfig(() => {
+  const envResult = dotenv.config({ path: `.env` });
   const envConfig = envResult.parsed || {};
 
   return {
