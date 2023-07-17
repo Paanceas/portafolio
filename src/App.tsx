@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import { ScrollToTop } from './components';

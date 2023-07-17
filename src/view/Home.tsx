@@ -1,4 +1,3 @@
-import React from "react";
 import { Header, About, Footer } from "../page";
 import { Slider } from "../page/slider/Slider";
 
