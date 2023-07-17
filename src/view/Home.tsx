@@ -1,12 +1,9 @@
-import { useDocumentTitle } from "../hooks";
+import React from "react";
 import { Header, About, Footer } from "../page";
 import { Slider } from "../page/slider/Slider";
 
 
 export const Home = () => {
-    useDocumentTitle(
-        "Pablo Ceballos"
-    );
     document.body.classList.add("theme-light");
     return (
         <div className="main-left">

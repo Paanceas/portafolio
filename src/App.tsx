@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import AnimatedCursor from 'react-animated-cursor';
 import { ScrollToTop } from './components';
@@ -7,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
+import { useSEOStrategy } from './hooks';
 
 function hexToRgb() {
   const hex = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
@@ -19,7 +21,7 @@ function hexToRgb() {
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('');
-
+  useSEOStrategy();
   const location = useLocation();
   useEffect(() => {
     AOS.init();

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDocumentTitle } from "../hooks";
 import { Footer } from "../page";
+import React from "react";
 
 export const NotFound = () => {
   useDocumentTitle("Not Found");
