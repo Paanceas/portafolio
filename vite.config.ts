@@ -3,7 +3,8 @@ import react from '@vitejs/plugin-react';
 import dotenv from 'dotenv';
 
 export default defineConfig(({ mode }) => {
-  const envConfig = dotenv.config({ path: `.env.${mode}` }).parsed;
+  const envResult = dotenv.config({ path: `.env.${mode}` });
+  const envConfig = envResult.parsed || {};
 
   return {
     plugins: [react()],
