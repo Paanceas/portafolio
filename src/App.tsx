@@ -5,6 +5,8 @@ import { PortafolioRouter } from './router/PortafolioRouter';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 function hexToRgb() {
   const hex = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
@@ -18,6 +20,7 @@ function hexToRgb() {
 function App() {
   const [backgroundColor, setBackgroundColor] = useState('');
 
+  const location = useLocation();
   useEffect(() => {
     AOS.init();
     // const mainColorHex = "#f29a86";
@@ -25,6 +28,11 @@ function App() {
     const mainColorRgb = hexToRgb();
     setBackgroundColor(mainColorRgb);
   }, []);
+
+  useEffect(() => {
+    // Enviar una página vista al cambiar de ruta
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [location]);
 
   return (
     <>
