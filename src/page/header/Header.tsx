@@ -62,7 +62,7 @@ export const Header = () => {
         className="nav nav-menu"
         items={["home", "about", "resume", "work", "blog", "contactus"]}
         currentClassName="active"
-        offset={0}
+        offset={30}
       >
                 <li>
                 <a
