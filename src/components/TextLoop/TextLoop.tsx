@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ReactElement, Children, cloneElement, CSSProperties } from "react";
+import React, { useState, useEffect, ReactElement, Children, cloneElement, CSSProperties } from 'react';
 
 interface TextLoopProps {
   children: ReactElement[];
@@ -19,14 +19,14 @@ export const TextLoop: React.FC<TextLoopProps> = ({ children, interval = 3000, a
     return () => clearTimeout(timer);
   }, [currentIndex, interval, children, animationDuration]);
 
-  const currentChild:any = Children.toArray(children)[currentIndex];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const currentChild: any = Children.toArray(children)[currentIndex];
 
   return (
     <span style={animationStyle} onAnimationEnd={() => setAnimationStyle({})}>
       {cloneElement(currentChild, {
-        className: `${currentChild.props.className || ""} active animate__animated animate__fadeInUp`,
+        className: `${currentChild.props.className || ''} active animate__animated animate__fadeInUp`,
       })}
     </span>
   );
 };
-

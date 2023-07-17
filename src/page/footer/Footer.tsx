@@ -1,17 +1,14 @@
-import {
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithub,
-  FaTwitter,
-  FaCertificate,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaGithub, FaTwitter, FaCertificate } from 'react-icons/fa';
 
 const SocialShare = [
-  { Social: <FaCertificate />, link: "https://www.credly.com/users/paanceas/badges" },
-  { Social: <FaTwitter />, link: "https://twitter.com/paanceas" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/pablo_ast_/" },
-  { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/paanceas/" },
-  { Social: <FaGithub />, link: "https://github.com/Paanceas" }
+  {
+    Social: <FaCertificate />,
+    link: 'https://www.credly.com/users/paanceas/badges',
+  },
+  { Social: <FaTwitter />, link: 'https://twitter.com/paanceas' },
+  { Social: <FaInstagram />, link: 'https://www.instagram.com/pablo_ast_/' },
+  { Social: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/paanceas/' },
+  { Social: <FaGithub />, link: 'https://github.com/Paanceas' },
 ];
 
 export const Footer = () => {
@@ -32,14 +29,10 @@ export const Footer = () => {
 
         <div className="col-md-6 my-2 text-center text-md-end">
           <p>
-            © {new Date().getFullYear()} copyright{" "}
-            <a
-              href="https://pabloceballos.dev/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            © {new Date().getFullYear()} copyright{' '}
+            <a href="https://pabloceballos.dev/" target="_blank" rel="noreferrer">
               Pablo Ceballos
-            </a>{" "}
+            </a>{' '}
             all right reserved
           </p>
         </div>
@@ -49,4 +42,3 @@ export const Footer = () => {
     </>
   );
 };
-

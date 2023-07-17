@@ -3,8 +3,8 @@ import AnimatedCursor from 'react-animated-cursor';
 import { ScrollToTop } from './components';
 import { PortafolioRouter } from './router/PortafolioRouter';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { useSEOStrategy } from './hooks';
@@ -32,6 +32,7 @@ function App() {
 
   useEffect(() => {
     // Enviar una página vista al cambiar de ruta
+    // eslint-disable-next-line import/no-named-as-default-member
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, [location]);
 

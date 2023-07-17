@@ -1,24 +1,23 @@
-import { Header, About, Footer } from "../page";
-import { Slider } from "../page/slider/Slider";
-
+import { Header, About, Footer, Education } from '../page';
+import { Slider } from '../page/slider/Slider';
 
 export const Home = () => {
-    document.body.classList.add("theme-light");
-    return (
-        <div className="main-left">
-            <Header />
+  document.body.classList.add('theme-light');
+  return (
+    <div className="main-left">
+      <Header />
 
-            <Slider />
+      <Slider />
 
-            <About />
+      <About />
 
-            <footer className="footer white">
-                <div className="container">
-                    <Footer />
-                </div>
-            </footer>
+      <Education />
+
+      <footer className="footer white">
+        <div className="container">
+          <Footer />
         </div>
-
-    );
-
-}
+      </footer>
+    </div>
+  );
+};

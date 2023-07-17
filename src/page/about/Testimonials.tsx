@@ -1,6 +1,6 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const Testimonials = () => {
   const settings = {
@@ -30,31 +30,31 @@ export const Testimonials = () => {
 
   const TestimonilContent = [
     {
-      imageName: "team-1",
+      imageName: 'team-1',
       desc: `  Lorem Ipsum is simply dummy text of the printing and
       typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s.`,
-      reviewerName: "Nancy Byers",
-      designation: "CEO at ib-themes",
-      delayAnimation: "",
+      reviewerName: 'Nancy Byers',
+      designation: 'CEO at ib-themes',
+      delayAnimation: '',
     },
     {
-      imageName: "team-2",
+      imageName: 'team-2',
       desc: ` Lorem Ipsum is simply dummy text of the printing and
       typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s.`,
-      reviewerName: "Jara Afsari",
-      designation: "CEO at ib-themes",
-      delayAnimation: "200",
+      reviewerName: 'Jara Afsari',
+      designation: 'CEO at ib-themes',
+      delayAnimation: '200',
     },
     {
-      imageName: "team-4",
+      imageName: 'team-4',
       desc: ` Lorem Ipsum is simply dummy text of the printing and
       typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s.`,
-      reviewerName: "Janiaya kiaram",
-      designation: "Visual Designer",
-      delayAnimation: "400",
+      reviewerName: 'Janiaya kiaram',
+      designation: 'Visual Designer',
+      delayAnimation: '400',
     },
   ];
 
@@ -62,18 +62,10 @@ export const Testimonials = () => {
     <div className="testimonial-wrapper">
       <Slider {...settings}>
         {TestimonilContent.map((val, i) => (
-          <div
-            key={i}
-            data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay={val.delayAnimation}
-          >
+          <div key={i} data-aos="fade-up" data-aos-duration="1200" data-aos-delay={val.delayAnimation}>
             <div className="testimonial-01 media">
               <div className="avatar">
-                <img
-                  src={`img/testimonial/${val.imageName}.jpg`}
-                  alt="review comments"
-                ></img>
+                <img src={`img/testimonial/${val.imageName}.jpg`} alt="review comments"></img>
               </div>
               <div className="media-body">
                 <p>{val.desc}</p>
@@ -86,4 +78,4 @@ export const Testimonials = () => {
       </Slider>
     </div>
   );
-}
+};

@@ -60,7 +60,7 @@ mark {
     z-index: 2;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -185,7 +185,7 @@ a {
     width: 64px;
     height: 64px;
     &:after {
-      content: " ";
+      content: ' ';
       display: block;
       width: 46px;
       height: 46px;

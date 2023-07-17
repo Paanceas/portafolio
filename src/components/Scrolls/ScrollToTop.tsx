@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { FiArrowUp } from "react-icons/fi";
+import { useEffect, useState } from 'react';
+import { FiArrowUp } from 'react-icons/fi';
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +9,7 @@ export const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
@@ -23,9 +23,9 @@ export const ScrollToTop = () => {
       }
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    window.addEventListener('scroll', toggleVisibility);
 
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
   return (
@@ -45,4 +45,4 @@ export const ScrollToTop = () => {
       )}
     </>
   );
-}
+};

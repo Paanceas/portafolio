@@ -38,7 +38,7 @@
       color: $px-dark;
     }
     &:after {
-      content: "";
+      content: '';
       width: 45px;
       height: 45px;
       border-radius: 50%;
@@ -51,7 +51,7 @@
       animation: slide-both-side 4s infinite both;
 
       .theme-light & {
-        background: rgba(var(--main-color), 0.5);
+        opacity: 0.5;
       }
       @include down-md {
         top: -4px;
@@ -67,8 +67,6 @@
   background-repeat: repeat-x;
   background-size: auto 6px;
   background-position: center;
-  .theme-light & {
-  }
   @include down-md {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -85,7 +83,7 @@
   position: relative;
   overflow: hidden;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     right: -20vh;
     bottom: -20vh;
@@ -258,7 +256,7 @@
           font-size: 20px;
         }
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           top: 0;
           left: 0;
@@ -293,7 +291,7 @@
   @media screen and (max-width: 1024px) {
     background-position: 78% 100%;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -438,7 +436,7 @@
     background: $px-white;
   }
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     top: -220px;
     left: -220px;
@@ -450,7 +448,7 @@
     transition: 0.5s ease-in-out;
   }
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     top: -72px;
     left: -40px;
@@ -494,7 +492,7 @@
       border-radius: 50%;
     }
     &:after {
-      content: "";
+      content: '';
       width: 120%;
       left: -10%;
       top: -10%;

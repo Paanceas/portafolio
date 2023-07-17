@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export const ScrollTopBehavior = () => {
   const { pathname } = useLocation();
@@ -9,4 +9,4 @@ export const ScrollTopBehavior = () => {
   }, [pathname]);
 
   return null;
-}
+};

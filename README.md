@@ -13,6 +13,7 @@ git clone https://github.com/paanceas/portafolio.git
 ```
 
 2. Navega hasta el directorio del proyecto.
+
 ```shell
 cd portafolio
 ```
@@ -22,7 +23,6 @@ cd portafolio
 ```shell
 npm install
 ```
-
 
 4. Crea un archivo `.env` en la raíz del proyecto y configura las variables de entorno necesarias. Por ejemplo, puedes necesitar configurar las claves de acceso a servicios externos, como una API de correo electrónico.
 

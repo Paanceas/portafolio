@@ -15,7 +15,10 @@ export const useSEOStrategy = () => {
       { name: 'keywords', content: keywords.join(', ') },
     ];
 
-    const linkTags = links.map((enlace) => ({ rel: 'canonical', href: enlace }));
+    const linkTags = links.map((enlace) => ({
+      rel: 'canonical',
+      href: enlace,
+    }));
 
     // Función para actualizar las etiquetas en el encabezado
     const updateHeaderTags = () => {
