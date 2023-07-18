@@ -7,10 +7,10 @@ import ReactGA from 'react-ga';
 
 // Configurar Google Analytics con tu ID de seguimiento
 // eslint-disable-next-line import/no-named-as-default-member
-ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || '');
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID || 'G-36NF25T98K');
 // Agregar etiqueta de script de Google Analytics al head del documento
 // eslint-disable-next-line import/no-named-as-default-member
-ReactGA.ga('create', process.env.REACT_APP_GA_TRACKING_ID || 'UA-XXXXX-Y', 'auto');
+ReactGA.ga('create', process.env.REACT_APP_GA_TRACKING_ID || 'G-36NF25T98K', 'auto');
 // eslint-disable-next-line import/no-named-as-default-member
 ReactGA.ga('send', 'pageview');
 
