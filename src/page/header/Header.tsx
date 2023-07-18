@@ -57,7 +57,7 @@ export const Header = () => {
 
           <ScrollSpy
             className="nav nav-menu"
-            items={['home', 'about', 'resume', 'work', 'blog', 'contactus']}
+            items={['home', 'about', 'education']}
             currentClassName="active"
             offset={30}
           >

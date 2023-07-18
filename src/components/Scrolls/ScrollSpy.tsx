@@ -17,6 +17,7 @@ export const ScrollSpy: React.FC<ScrollSpyProps> = ({ className, items, currentC
       const scrollPosition = window.scrollY;
       for (const item of items) {
         const element = document.getElementById(item);
+        console.log("🚀 ~ file: ScrollSpy.tsx:20 ~ handleScroll ~ item:", item)
 
         if (element) {
           const { top, height } = element.getBoundingClientRect();
