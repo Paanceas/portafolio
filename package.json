@@ -42,6 +42,7 @@
     "@types/react-dom": "^18.2.6",
     "@types/react-scrollspy": "^3.3.5",
     "@types/react-slick": "^0.23.10",
+    "@types/google.analytics": "^0.0.42",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-react": "^4.0.1",
