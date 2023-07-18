@@ -1,4 +1,5 @@
-import { Social } from '.';
+import { Services, Social } from '.';
+import { Hr } from '../../components';
 
 const conctInfo = {
   phone: '+57 3132196834',
@@ -103,21 +104,14 @@ export const About = () => {
 
           {/* separated */}
 
-          {/* <div
-            className="separated"
-            style={{
-              backgroundImage: `url(${
-                "./img/border-dark.png"
-              })`,
-            }}
-          ></div> */}
+          <Hr />
 
           {/* End separated */}
-          {/* <div className="title">
-            <h3>What I do?</h3>
+          <div className="title">
+            <h3>¿Qué hago?</h3>
           </div>
 
-          <Services /> */}
+          <Services />
 
           {/* End .row */}
 

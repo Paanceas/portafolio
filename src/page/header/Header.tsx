@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import { FiFileText, FiUser } from 'react-icons/fi';
@@ -7,6 +7,7 @@ import { ScrollSpy } from '../../components';
 
 export const Header = () => {
   const [click, setClick] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleClick = (e: any) => {
@@ -19,7 +20,6 @@ export const Header = () => {
     navLinks.forEach((link) => {
       link.classList.remove('active');
     });
-
     while (element && level < 5) {
       if (element.tagName === 'LI') {
         element.classList.add('active');
@@ -28,6 +28,20 @@ export const Header = () => {
       element = element.parentElement;
       level++;
     }
+
+    const nameLink: string = element.firstChild.dataset['for'];
+    handleNavItemClick(nameLink.toLowerCase());
+  };
+
+  const handleScrollTo = (id: string) => {
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavItemClick = (id: string) => {
+    handleScrollTo(id);
     setClick(!click);
   };
 
@@ -55,37 +69,45 @@ export const Header = () => {
           </div>
           {/* End htl-top */}
 
-          <ScrollSpy
-            className="nav nav-menu"
-            items={['home', 'about', 'education']}
-            currentClassName="active"
-            offset={30}
-          >
-            <li>
-              <a className="nav-link active" href="#home" data-tip data-for="HOME" onClick={handleClick}>
-                <FaHome />
-                <ReactTooltip id="HOME" place="right" type="dark" effect="float">
-                  <span>Home</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#about" data-tip data-for="ABOUT" onClick={handleClick}>
-                <FiUser />
-                <ReactTooltip id="ABOUT" place="right" type="dark" effect="float">
-                  <span>About</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a className="nav-link" href="#education" data-tip data-for="EDUCATION" onClick={handleClick}>
-                <FiFileText />
-                <ReactTooltip id="EDUCATION" place="right" type="dark" effect="float">
-                  <span>Educación</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            {/* <li>
+          <div ref={scrollRef}>
+            <ScrollSpy
+              className="nav nav-menu"
+              items={['home', 'about', 'education']}
+              currentClassName="active"
+              offset={30}
+            >
+              <li>
+                <Link
+                  to="/"
+                  className="nav-link"
+                  // onClick={() => handleNavItemClick('home')}
+                  onClick={handleClick}
+                  data-tip
+                  data-for="HOME"
+                >
+                  <FaHome />
+                  <ReactTooltip id="HOME" place="right" type="dark" effect="float">
+                    <span>Home</span>
+                  </ReactTooltip>
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="nav-link" onClick={handleClick} data-tip data-for="ABOUT">
+                  <FiUser />
+                  <ReactTooltip id="ABOUT" place="right" type="dark" effect="float">
+                    <span>About</span>
+                  </ReactTooltip>
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className="nav-link" onClick={handleClick} data-tip data-for="EDUCATION">
+                  <FiFileText />
+                  <ReactTooltip id="EDUCATION" place="right" type="dark" effect="float">
+                    <span>Educación</span>
+                  </ReactTooltip>
+                </Link>
+              </li>
+              {/* <li>
                 <a
                     className="nav-link"
                     href="#work"
@@ -142,7 +164,8 @@ export const Header = () => {
                     </ReactTooltip>
                 </a>
                 </li> */}
-          </ScrollSpy>
+            </ScrollSpy>
+          </div>
         </div>
       </header>
       {/* End Header */}

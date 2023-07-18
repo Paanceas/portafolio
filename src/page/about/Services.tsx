@@ -1,23 +1,20 @@
 const ServiceContent = [
   {
     icon: 'icon-mobile',
-    title: 'Web Design',
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: 'Frontend',
+    descriptions: `Como Desarrollador Frontend, creo soluciones innovadoras y atractivas para interfaces de usuario utilizando Angular, React, JS ES6 y Typescript. Mi enfoque se centra en la experiencia del usuario y la usabilidad.`,
     delayAnimation: '',
   },
   {
     icon: 'icon-desktop',
-    title: 'Web Development',
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: 'Backend',
+    descriptions: `Con conocimientos en Java SpringBoot, Node.js y Go, me especializo en desarrollar la lógica del servidor y manejo de bases de datos. Me aseguro de crear APIs robustas y eficientes.`,
     delayAnimation: '200',
   },
   {
     icon: 'icon-target',
-    title: 'Seo Marketing',
-    descriptions: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+    title: 'Software Engineer',
+    descriptions: `Hábil en arquitectura cloud (AWS, Azure), colaboro en equipos ágiles, aplicando Scrum y entregando soluciones escalables y seguras en entornos de nube. Trabajo en equipo para lograr los objetivos del proyecto.`,
     delayAnimation: '400',
   },
 ];

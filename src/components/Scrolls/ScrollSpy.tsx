@@ -44,8 +44,9 @@ export const ScrollSpy: React.FC<ScrollSpyProps> = ({ className, items, currentC
         const childClassName = child.props.className || '';
 
         const childrenProps = child.props?.children?.props || '';
+        const childrenDataFor: string = childrenProps['data-for'];
 
-        if (activeItem === childrenProps.href?.substr(1)) {
+        if (activeItem === childrenDataFor.toLowerCase()) {
           return React.cloneElement(child, {
             className: `${childClassName} ${currentClassName}`,
           });

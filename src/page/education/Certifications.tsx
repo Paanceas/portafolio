@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Certification, CertificationsCompanies, certificationImages } from '../../models';
+import { Hr } from '../../components';
 
 export const Certifications = () => {
   const settings = {
@@ -70,12 +71,7 @@ export const Certifications = () => {
 
   return (
     <>
-      <div
-        className="separated"
-        style={{
-          backgroundImage: `url(${'img/border-dark.png'})`,
-        }}
-      ></div>
+      <Hr />
       {/* End separated */}
 
       <div className="title">
