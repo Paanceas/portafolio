@@ -86,11 +86,11 @@ export const About = () => {
                       <ul>
                         <li>
                           <label>Phone: </label>
-                          <span>{conctInfo.phone}</span>
+                          <a href={`tel: ${conctInfo.phone}`}>{conctInfo.phone}</a>
                         </li>
                         <li>
                           <label>Email: </label>
-                          <span>{conctInfo.email}</span>
+                          <a href={`mailto:mail%20to:${conctInfo.email}`}>{conctInfo.email}</a>
                         </li>
                       </ul>
                     </div>

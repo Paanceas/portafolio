@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
 
 interface Skill {
   name: string;
@@ -49,7 +47,6 @@ const skillContent: Skill[] = [
 ];
 
 export const Skills = () => {
-  const [focus, setFocus] = useState(false);
   return (
     <>
       <div className="skill-wrapper">
@@ -57,18 +54,8 @@ export const Skills = () => {
           <div className="skill-lt" key={i}>
             <h6>{skill.name}</h6>
             <span className="count-inner">
-              <CountUp start={focus ? skill.startCount : 0} end={skill.endCount} duration={1} redraw={true}>
-                {({ countUpRef }) => (
-                  <VisibilitySensor
-                    onChange={(isVisible: boolean) => {
-                      if (isVisible) {
-                        setFocus(true);
-                      }
-                    }}
-                  >
-                    <span ref={countUpRef} />
-                  </VisibilitySensor>
-                )}
+              <CountUp start={skill.startCount} end={skill.endCount} duration={1} redraw={true}>
+                {({ countUpRef }) => <span ref={countUpRef} />}
               </CountUp>
               %
             </span>

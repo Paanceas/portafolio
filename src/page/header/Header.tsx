@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
-import { FiUser } from 'react-icons/fi';
+import { FiFileText, FiUser } from 'react-icons/fi';
 import { FaHome } from 'react-icons/fa';
 import { ScrollSpy } from '../../components';
 
@@ -77,26 +77,15 @@ export const Header = () => {
                 </ReactTooltip>
               </a>
             </li>
+            <li>
+              <a className="nav-link" href="#education" data-tip data-for="EDUCATION" onClick={handleClick}>
+                <FiFileText />
+                <ReactTooltip id="EDUCATION" place="right" type="dark" effect="float">
+                  <span>Educación</span>
+                </ReactTooltip>
+              </a>
+            </li>
             {/* <li>
-                <a
-                    className="nav-link"
-                    href="#resume"
-                    data-tip
-                    data-for="RESUME"
-                    onClick={handleClick}
-                >
-                    <FiFileText />
-                    <ReactTooltip
-                    id="RESUME"
-                    place="right"
-                    type="dark"
-                    effect="float"
-                    >
-                    <span>Resume</span>
-                    </ReactTooltip>
-                </a>
-                </li>
-                <li>
                 <a
                     className="nav-link"
                     href="#work"

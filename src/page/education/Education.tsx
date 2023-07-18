@@ -1,4 +1,4 @@
-import { Skills } from '.';
+import { Certifications, Skills } from '.';
 
 const educationContent = [
   {
@@ -48,6 +48,7 @@ export const Education = () => {
             <Skills />
           </div>
           {/* End .col */}
+          <Certifications />
         </div>
       </div>
     </section>
