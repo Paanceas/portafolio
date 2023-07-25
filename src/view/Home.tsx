@@ -1,4 +1,4 @@
-import { Header, About, Footer, Education } from '../page';
+import { Header, About, Footer, Education, Experience } from '../page';
 import { Slider } from '../page/slider/Slider';
 
 export const Home = () => {
@@ -13,11 +13,9 @@ export const Home = () => {
 
       <Education />
 
-      <footer className="footer white">
-        <div className="container">
-          <Footer />
-        </div>
-      </footer>
+      <Experience />
+
+      <Footer />
     </div>
   );
 };

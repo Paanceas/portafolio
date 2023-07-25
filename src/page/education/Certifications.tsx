@@ -75,7 +75,7 @@ export const Certifications = () => {
       {/* End separated */}
 
       <div className="title">
-        <h3>Certificaciones</h3>{' '}
+        <h3>Certificaciones y Cursos</h3>{' '}
       </div>
       <div className="testimonial-wrapper">
         <Slider {...settings}>

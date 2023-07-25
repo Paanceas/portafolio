@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
-import { FiFileText, FiUser } from 'react-icons/fi';
+import { FiBriefcase, FiFileText, FiUser } from 'react-icons/fi';
 import { FaHome } from 'react-icons/fa';
 import { ScrollSpy } from '../../components';
 
@@ -29,8 +29,8 @@ export const Header = () => {
       level++;
     }
 
-    const nameLink: string = element.firstChild.dataset['for'];
-    handleNavItemClick(nameLink.toLowerCase());
+    const nameLink: string = element?.firstChild?.dataset['for'];
+    handleNavItemClick(nameLink?.toLowerCase());
   };
 
   const handleScrollTo = (id: string) => {
@@ -72,7 +72,7 @@ export const Header = () => {
           <div ref={scrollRef}>
             <ScrollSpy
               className="nav nav-menu"
-              items={['home', 'about', 'education']}
+              items={['home', 'about', 'education', 'work']}
               currentClassName="active"
               offset={30}
             >
@@ -107,26 +107,15 @@ export const Header = () => {
                   </ReactTooltip>
                 </Link>
               </li>
+              <li>
+                <Link to="/" className="nav-link" onClick={handleClick} data-tip data-for="WORK">
+                  <FiBriefcase />
+                  <ReactTooltip id="WORK" place="right" type="dark" effect="float">
+                    <span>Trabajo</span>
+                  </ReactTooltip>
+                </Link>
+              </li>
               {/* <li>
-                <a
-                    className="nav-link"
-                    href="#work"
-                    data-tip
-                    data-for="WORK"
-                    onClick={handleClick}
-                >
-                    <FiBriefcase />
-                    <ReactTooltip
-                    id="WORK"
-                    place="right"
-                    type="dark"
-                    effect="float"
-                    >
-                    <span>Work</span>
-                    </ReactTooltip>
-                </a>
-                </li>
-                <li>
                 <a
                     className="nav-link"
                     href="#blog"

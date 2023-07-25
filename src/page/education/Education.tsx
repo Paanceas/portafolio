@@ -2,7 +2,7 @@ import { Certifications, Skills } from '.';
 
 const educationContent = [
   {
-    passingYear: '2018-actual',
+    passingYear: '2018-2023',
     degreeTitle: 'Ingeniería de Sistemas',
     instituteName: 'UCompensar',
   },
