@@ -8,10 +8,7 @@ const conctInfo = {
 const sliderContent = {
   name: 'Pablo Ceballos',
   designation: 'Full-stack Developer',
-  description: `Desarrollador de software con experiencia en diseño y gestión de proyectos de Software, 
-  desarrollo de sistemas de información y desarrollo de interfaces de usuario, 
-  he trabajado en una amplia variedad de proyectos, desde pequeñas startups hasta grandes corporaciones, 
-  y siempre he buscado brindar soluciones innovadoras y efectivas a los problemas empresariales, arquitectura cloud y metodologías ágiles.`,
+  description: `Ingeniero de Sistemas especializado en el desarrollo de interfaces de usuario y gestión de proyectos de software. Con una sólida experiencia trabajando en una variedad de entornos, desde startups dinámicas hasta grandes corporaciones, he dedicado mi carrera a crear soluciones innovadoras y efectivas, con un énfasis particular en el desarrollo frontend. Mi enfoque no solo se limita a la estética y usabilidad, sino también a la implementación de arquitecturas en la nube y la aplicación de metodologías ágiles, garantizando así soluciones de software robustas y adaptativas que satisfacen las necesidades empresariales.`,
   btnText: ' Descargar CV',
 };
 
@@ -22,7 +19,6 @@ export const Slider = () => {
       <section id="home" className="home-banner">
         <div className="hb-top-fixed d-flex">
           <div className="hb-info">
-            <a href={`tel: ${conctInfo.phone}`}>{conctInfo.phone}</a>
             <a href={`mailto:mail%20to:${conctInfo.email}`}>{conctInfo.email}</a>
           </div>
         </div>

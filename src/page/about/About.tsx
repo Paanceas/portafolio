@@ -4,119 +4,118 @@ import { Hr } from '../../components';
 const conctInfo = {
   phone: '+57 3132196834',
   email: 'pablo.ceballos@outlook.es',
-  age: 25,
-  ubication: 'Bogotá, Colombia',
+  age: 26,
+  location: 'Bogotá, Colombia',
 };
 
 export const About = () => {
   return (
-    <>
-      <section id="about" className="section theme-light dark-bg">
-        <div className="container">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
-              <div className="about-me">
-                <div className="img">
-                  <div className="img-in">
-                    <img src="img/about/about-me.jpeg" alt="about" />
-                  </div>
-
-                  <Social />
-
-                  {/* End social icon */}
+    <section id="about" className="section theme-light dark-bg">
+      <div className="container">
+        <div className="row align-items-center justify-content-center">
+          <div className="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+            <div className="about-me">
+              <div className="img">
+                <div className="img-in">
+                  <img src="img/about/about-me.jpeg" alt="about" />
                 </div>
-                {/* End img */}
-                <div className="info">
-                  <p>Fullstack-Developer</p>
-                  <h3>Pablo Ceballos</h3>
-                </div>
-                {/* End info */}
+
+                <Social />
+
+                {/* End social icon */}
               </div>
-              {/* End about-me */}
+              {/* End img */}
+              <div className="info">
+                <p>Fullstack-Developer</p>
+                <h3>Pablo Ceballos</h3>
+              </div>
+              {/* End info */}
             </div>
-            {/* End col */}
+            {/* End about-me */}
+          </div>
+          {/* End col */}
 
-            <div className="col-lg-7 ml-auto" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-              <div className="about-info">
-                <div className="title">
-                  <h3>Acerca de mí</h3>
-                </div>
+          <div className="col-lg-7 ml-auto" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+            <div className="about-info">
+              <div className="title">
+                <h3>Acerca de mí</h3>
+              </div>
 
-                <div className="about-text">
-                  <p>
-                    Soy un analista y desarrollador de software con más de 6 años de experiencia en diseño y gestión de
-                    proyectos IT. En el desarrollo frontend, donde encuentro mi pasión y disfruto creando interfaces de
-                    usuario intuitivas y atractivas. A través de lenguajes de programación como Angular, React, JS ES6 y
-                    Typescript, puedo dar vida a experiencias de usuario excepcionales.
-                  </p>
-                  <p>
-                    Además, como desarrollador full stack, también poseo sólidos conocimientos en el desarrollo backend
-                    utilizando tecnologías como Java SpringBoot, Node.js y Go. Estas habilidades me permiten trabajar en
-                    la implementación de la lógica del servidor, la manipulación de bases de datos relacionales y no
-                    relacionales, y la integración de sistemas para crear soluciones completas y escalables.
-                  </p>
-                  <p>
-                    Soy un apasionado del aprendizaje continuo y estoy comprometido con el trabajo en equipo. He
-                    trabajado bajo metodologías ágiles como Scrum, lo que me permite adaptarme rápidamente a los cambios
-                    y colaborar de manera efectiva con otros profesionales en proyectos dinámicos.
-                  </p>
-                  <p>
-                    Estoy comprometido en brindar soluciones innovadoras y efectivas a los desafíos empresariales a
-                    través de la creación de sistemas de información y experiencias de usuario excepcionales.
-                  </p>
-                </div>
-                <div className="info-list">
-                  <div className="row">
-                    <div className="col-sm-6">
-                      <ul>
-                        <li>
-                          <label>Edad: </label>
-                          <span>{conctInfo.age} Años</span>
-                        </li>
-                        <li>
-                          <label>Ubicación: </label>
-                          <span>{conctInfo.ubication}</span>
-                        </li>
-                        <li>
-                          <label>Freelance: </label>
-                          <span>Disponible</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-sm-6">
-                      <ul>
-                        <li>
-                          <label>Phone: </label>
-                          <a href={`tel: ${conctInfo.phone}`}>{conctInfo.phone}</a>
-                        </li>
-                        <li>
-                          <label>Email: </label>
-                          <a href={`mailto:mail%20to:${conctInfo.email}`}>{conctInfo.email}</a>
-                        </li>
-                      </ul>
-                    </div>
+              <div className="about-text">
+                <p>
+                  Soy Ingeniero de Sistemas con más de 6 años de experiencia en el ámbito tecnológico, especializándome
+                  en diseño y gestión de proyectos IT. Mi pasión reside en el desarrollo frontend, donde disfruto
+                  creando interfaces de usuario intuitivas y visualmente atractivas. Dominando lenguajes de programación
+                  como Angular, React, JS ES6 y TypeScript, soy capaz de materializar experiencias de usuario
+                  excepcionales.
+                </p>
+                <p>
+                  En mi rol de desarrollador full stack, cuento con una sólida base en desarrollo backend, utilizando
+                  tecnologías como Java Spring Boot, Node.js, Nestjs y Go. Esta combinación de habilidades me faculta
+                  para implementar lógica de servidor, gestionar bases de datos relacionales y no relacionales, e
+                  integrar sistemas, creando así soluciones completas y escalables.
+                </p>
+                <p>
+                  Mi compromiso con el aprendizaje continuo y el trabajo en equipo me ha llevado a trabajar bajo
+                  metodologías ágiles como Scrum, Kanban y Scrumban, permitiéndome adaptarme rápidamente a los cambios y
+                  colaborar eficazmente con otros profesionales en proyectos dinámicos.
+                </p>
+                <p>
+                  Estoy enfocado en aportar valor a través de la innovación y la mejora continua en proyectos de
+                  tecnología. Mi experiencia abarcando tanto el frontend como el backend me permite diseñar y ejecutar
+                  soluciones sofisticadas que mejoran significativamente las operaciones empresariales y enriquecen la
+                  experiencia del usuario, logrando un equilibrio óptimo entre funcionalidad, estética y eficiencia.
+                </p>
+              </div>
+
+              <div className="info-list">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <ul>
+                      <li>
+                        <label>Edad: </label>
+                        <span>{conctInfo.age} Años</span>
+                      </li>
+                      <li>
+                        <label>Ubicación: </label>
+                        <span>{conctInfo.location}</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-sm-6">
+                    <ul>
+                      <li>
+                        <label>Freelance: </label>
+                        <span>Disponible</span>
+                      </li>
+                      <li>
+                        <label>Email: </label>
+                        <a href={`mailto:mail%20to:${conctInfo.email}`}>{conctInfo.email}</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
-            {/* End col */}
           </div>
+          {/* End col */}
+        </div>
 
-          {/* separated */}
+        {/* separated */}
 
-          <Hr />
+        <Hr />
 
-          {/* End separated */}
-          <div className="title">
-            <h3>¿Qué hago?</h3>
-          </div>
+        {/* End separated */}
+        <div className="title">
+          <h3>¿Qué hago?</h3>
+        </div>
 
-          <Services />
+        <Services />
 
-          {/* End .row */}
+        {/* End .row */}
 
-          {/* separated */}
-          {/* <div
+        {/* separated */}
+        {/* <div
             className="separated"
             style={{
               backgroundImage: `url(${
@@ -124,17 +123,17 @@ export const About = () => {
               })`,
             }}
           ></div> */}
-          {/* End separated */}
+        {/* End separated */}
 
-          {/* <div className="title">
+        {/* <div className="title">
             <h3>Awards.</h3>
           </div>
 
           <Awards /> */}
-          {/* End Awards */}
+        {/* End Awards */}
 
-          {/* separated */}
-          {/* <div
+        {/* separated */}
+        {/* <div
             className="separated"
             style={{
               backgroundImage: `url(${
@@ -142,16 +141,15 @@ export const About = () => {
               })`,
             }}
           ></div> */}
-          {/* End separated */}
+        {/* End separated */}
 
-          {/* <div className="title">
+        {/* <div className="title">
             <h3>Testimonials.</h3>
           </div>
 
           <Testimonials /> */}
-          {/* End Testimonaial */}
-        </div>
-      </section>
-    </>
+        {/* End Testimonaial */}
+      </div>
+    </section>
   );
 };
